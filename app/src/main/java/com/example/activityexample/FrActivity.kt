@@ -13,9 +13,8 @@ class FrActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMain5Binding.inflate(layoutInflater)
-        val view = binding.root
 
-        setContentView(view)
+        setContentView(binding.root)
 
         val firstFra = FirstFragment()
         val secFra = SecondFragment()
@@ -23,14 +22,14 @@ class FrActivity: AppCompatActivity() {
 
         binding.btnFragment1.setOnClickListener{
             supportFragmentManager.beginTransaction().apply {
-                replace(R.id.fragment,firstFra)
+                replace(R.id.fragment_container_view,firstFra)
                 commit()
             }
         }
 
         binding.btnFragment2.setOnClickListener{
             supportFragmentManager.beginTransaction().apply {
-                replace(R.id.fragment,secFra)
+                replace(R.id.fragment_container_view,secFra)
                 commit()
             }
         }

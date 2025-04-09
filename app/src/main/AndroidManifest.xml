@@ -12,12 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ActivityExample"
         tools:targetApi="31">
-
-<!--    Main Activity (entry point of the application) -->
+<!--        <activity-->
+<!--            android:name=".UserInputActivity"-->
+<!--            android:exported="false" />-->
+        <!-- Main Activity (entry point of the application) -->
         <activity
-            android:name=".FrActivity"
+            android:name=".UserInputActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.ActivityExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,9 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-    <!--SecondActivity (Navigated from MainActivity)-->
-<!--        <activity android:name=".FourthActivity"/>-->
+        <!-- SecondActivity (Navigated from MainActivity) -->
+<!--        <activity android:name=".SixthActivity" />-->
     </application>
 
 </manifest>

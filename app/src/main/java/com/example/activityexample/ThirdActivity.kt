@@ -19,7 +19,7 @@ class ThirdActivity: ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMain3Binding.inflate(layoutInflater)
-        val view = binding.root
+        setContentView(binding.root)
 
          resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == 10) {
@@ -34,7 +34,7 @@ class ThirdActivity: ComponentActivity() {
             resultLauncher.launch(intent) // Start Activity and wait for result
         }
 
-        setContentView(view)
+
 
 
     }

@@ -30,15 +30,11 @@
         app:layout_constraintStart_toEndOf="@+id/btnFragment1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:name="com.example.activityexample.FirstFragment"
-        android:id="@+id/fragment"
-        android:layout_width="409dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFragment1"
-        app:layout_constraintVertical_bias="0.0" />
+        android:name="com.example.activityexample.FirstFragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

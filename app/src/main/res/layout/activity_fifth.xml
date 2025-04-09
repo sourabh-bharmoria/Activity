@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Sourabh Bharmoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="sourabh@gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView1" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#3D56D5"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
